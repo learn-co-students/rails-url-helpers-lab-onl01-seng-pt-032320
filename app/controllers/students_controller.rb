@@ -6,7 +6,19 @@ class StudentsController < ApplicationController
   end
 
   def show
+    @student = Student.find_by_id(params[:id])
   end
+
+  def activate
+    @student = Student.find_by_id(params[:id])
+    @student.active = !@student.active
+    @student.save 
+    redirect_to student_path
+  end 
+
+  def to_s
+    self.first_name + " " + self.last_name 
+  end 
 
   private
 
