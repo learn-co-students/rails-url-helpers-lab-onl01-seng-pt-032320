@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2) do
 
   create_table "students", force: :cascade do |t|
@@ -19,5 +20,8 @@ ActiveRecord::Schema.define(version: 2) do
     t.datetime "updated_at",                 null: false
     t.boolean  "active",     default: false
   end
+=======
+ActiveRecord::Schema.define(version: 0) do
+>>>>>>> add2f387cfad78ec8628f08a8424449960b5cdf7
 
 end
